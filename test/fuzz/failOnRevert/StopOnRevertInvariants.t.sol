@@ -73,8 +73,8 @@ contract StopOnRevertInvariants is StdInvariant, Test {
     }
 
     /**
-    * @dev Updates the value of __invariant.fail_on_revert__ in __foundry.toml__ for this invariant test file
-    */
+     * @dev Updates the value of __invariant.fail_on_revert__ in __foundry.toml__ for this invariant test file
+     */
     /// forge-config: default.invariant.fail_on_revert = true
     function invariant_gettersCantRevert() public view {
         engine.getLiquidationBonus();

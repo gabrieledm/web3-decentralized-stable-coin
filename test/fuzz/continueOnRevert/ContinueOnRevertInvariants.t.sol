@@ -54,8 +54,8 @@ contract ContinueOnRevertInvariants is StdInvariant, Test {
     }
 
     /**
-    * @dev Updates the value of __invariant.fail_on_revert__ in __foundry.toml__ for this invariant test file
-    */
+     * @dev Updates the value of __invariant.fail_on_revert__ in __foundry.toml__ for this invariant test file
+     */
     /// forge-config: default.invariant.fail_on_revert = false
     function invariant_protocolMustHaveMoreValueThanTotalSupply() public view {
         uint256 totalSupply = stableCoin.totalSupply();
